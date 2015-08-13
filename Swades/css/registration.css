@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+#applicantDetails{
+  margin-top: 70px;
+  text-align:center;
+}
+
+#checkboxes{
+  text-align:left;
+  margin-left: 120px;
+}
