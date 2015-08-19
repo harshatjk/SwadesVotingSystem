@@ -36,6 +36,15 @@
                 placeholder="Last Name">
               </div>
             </div>
+
+            <div class="form-group">
+              <label for="scuid" class="control-label col-xs-4">SCU ID:</label>
+              <div class="col-xs-8">
+                <input type="number" class="form-control" id="scuid" name="scuid"
+                placeholder="SCU ID">
+              </div>
+            </div>
+
             <div class="form-group">
               <label for="email" class="control-label col-xs-4">Email ID:</label>
               <div class="col-xs-8">
@@ -43,6 +52,8 @@
                 placeholder="SCU Email ID">
               </div>
             </div>
+
+
             <div class="form-group">
               <label for="phone" class="control-label col-xs-4">Contact:</label>
               <div class="col-xs-8">
@@ -53,13 +64,13 @@
 
               <div class="form-group">
                 <label for="name">Why do you want to be part of SWADES board?</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" rows="3" name="reason"></textarea>
               </div>
 
 
               <div class="form-group">
                 <label for="name">Describe some unique qualities in you that makes you standout among others?</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" rows="3" name="uquality"></textarea>
               </div>
 
             <label class="control-label col-xs-9">Position's Interested In:</label>
@@ -67,27 +78,27 @@
               <div class="form-horizontal" id="checkboxes">
               <div class="checkbox">
                 <label>
-                  <input type="checkbox"> President
+                  <input type="checkbox" name="positions[]" value="president"> President
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox"> Vice President
+                  <input type="checkbox" name="positions[]" value="vicepresident" > Vice President
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox"> Tresurar
+                  <input type="checkbox" name="positions[]" value="tresurar"> Tresurar
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox"> Web Master
+                  <input type="checkbox" name="positions[]" value="webmaster"> Web Master
                 </label>
               </div>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox"> Event Coordinator
+                  <input type="checkbox" name="positions[]" value="eventcoordinator"> Event Coordinator
                 </label>
               </div>
             </div>

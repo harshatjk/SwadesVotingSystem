@@ -1,3 +1,22 @@
+<?php
+include "modules.php";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+//$FirstName = $_POST['firstName'];
+//echo $FirstName;
+//$pos = $_POST['positions'];
+//print_r ($pos);
+//$pos = "";
+  $position=implode(',', $_POST['positions']);
+   register($_POST['firstName'],$_POST['lastName'],$_POST['scuid'],$_POST['email'],$_POST['phone'],$_POST['reason'],$_POST['uquality'],$position);
+//foreach($_POST['positions'] as $position){
+  //echo $position;
+}
+//echo $q1;
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

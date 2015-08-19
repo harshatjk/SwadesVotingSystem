@@ -1,5 +1,48 @@
 @CHARSET "ISO-8859-1";
 
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-style: bold;
+  src: url('http://fonts.gstatic.com/s/ubuntu/v7/_tMhxyW6i8lbI7YsUdFlGA.eot');
+  src: url('http://fonts.gstatic.com/s/ubuntu/v7/_tMhxyW6i8lbI7YsUdFlGA.eot?#iefix') format('embedded-opentype'),
+       local('Ubuntu'),
+       local('Ubuntu-regular'),
+       url('http://fonts.gstatic.com/s/ubuntu/v7/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/ubuntu/v7/2Q-AW1e_taO6pHwMXcXW5w.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=MOWTjcs_zhdIcGnXsgVhnA#Ubuntu') format('svg');
+}
+
+@font-face {
+  font-family: 'Russo One';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z_Y6323mHUZFJMgTvxaG2iE.eot');
+  src: url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z_Y6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
+       local('Russo One'),
+       local('Russo-One-regular'),
+       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z5Bw1xU1rKptJj_0jans920.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z7O3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z6CWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=RO6e96EC9m6OLO0tr7J3z5bd9NUM7myrQQz30yPaGQ4#RussoOne') format('svg');
+}
+
+@font-face {
+  font-family: 'Sniglet';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/sniglet/v7/N15kDjflQOyBCJl1poTHsQ.eot');
+  src: url('http://fonts.gstatic.com/s/sniglet/v7/N15kDjflQOyBCJl1poTHsQ.eot?#iefix') format('embedded-opentype'),
+       local('Sniglet Regular'),
+       local('Sniglet-regular'),
+       url('http://fonts.gstatic.com/s/sniglet/v7/MPlYT5AgACGCWwu4VFE-0gLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/sniglet/v7/YKExnnK0h4dXQs9TX8CgrgLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/sniglet/v7/fgj9ij3bqnclL-IZjpMXxw.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=RKBq93DZxZjARS9SfTbhAA&skey=430260da1e5b7678#Sniglet') format('svg');
+}
+
+
 
 .container {
   margin: 0px auto;
@@ -76,8 +119,26 @@
 }
 
 #registrationTimer{
-
+font-family: 'Ubuntu';
   font-size: 25px;
   text-align:justify;
+  text-align:center;
+}
+
+#welcomePortal{
+  font-family: 'Russo One';
+  font-size: 35px;
+  text-align:justify;
+  text-align:center;
+}
+
+#tagLine{
+  font-family: 'Sniglet';
+  font-size: 15px;
+  text-align:justify;
+  text-align:center;
+}
+
+.followUs{
   text-align:center;
 }
