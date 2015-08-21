@@ -1,6 +1,6 @@
 <?php
 include "modules.php";
-
+error_reporting(0);
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 //$FirstName = $_POST['firstName'];
 //echo $FirstName;
