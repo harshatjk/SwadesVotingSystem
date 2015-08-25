@@ -1,4 +1,34 @@
 @CHARSET "ISO-8859-1";
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot');
+  src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot?#iefix') format('embedded-opentype'),
+       local('Alegreya Sans Medium'),
+       local('Alegreya-Sans-500'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9afDHhyC1TRD9sSvvqBBgc4w.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aYbHQgMiPeC0S_y2k9np4ck.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=11EDm-lum6tskJMBbdy9aYAtZcN_2HNZOarCoCsaTns&skey=2fba1343c636ee49#AlegreyaSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/lobster/v12/RbZDm27knEncUX6lPsjRBg.eot');
+  src: url('http://fonts.gstatic.com/s/lobster/v12/RbZDm27knEncUX6lPsjRBg.eot?#iefix') format('embedded-opentype'),
+       local('Lobster'),
+       local('Lobster-regular'),
+       url('http://fonts.gstatic.com/s/lobster/v12/G6-OYdAAwU5fSlE7MlBvhQLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/lobster/v12/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/lobster/v12/TSDaXhyJuDJ-NBU0popSWA.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=j6oWj_2FuMvwWoXYXnyDeA#Lobster') format('svg');
+}
+
+
 #applicantDetails{
   margin-top: 70px;
   text-align:center;
@@ -7,4 +37,18 @@
 #checkboxes{
   text-align:left;
   margin-left: 120px;
+}
+
+#successful{
+  font-family: 'Alegreya Sans';
+
+  font-size: 35px;
+  text-align:justify;
+  text-align:center;
+}
+
+#bestWishes{
+font-family: 'Lobster';  font-size: 25px;
+  text-align:justify;
+  text-align:center;
 }

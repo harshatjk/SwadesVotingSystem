@@ -1,6 +1,6 @@
 <?php
 include 'config.php';
-echo "1";
+//echo "1";
 function dbConnection(){
   $con = new mysqli(SERVER,USERNAME,PASSWORD,DBNAME);
   //echo "Sucessful";

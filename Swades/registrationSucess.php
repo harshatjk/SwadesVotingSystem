@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>Registeration</title>
+  <title>Successful</title>
   <link rel="stylesheet"
   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script
@@ -33,7 +33,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
   <div class="container" style="background-image: url('images/SwadesOpacity.jpg'); background-size: 100% 700px; height:600px;">
-    <p>Registration Sucessful</p>
+    <p id="successful">Registration Successful !! Your are now a contender for the post in Swades Board.</p>
+    <p id="bestWishes">"All The Best"</p>
   </div>
 </body>
 </html>
