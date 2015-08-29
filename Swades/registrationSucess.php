@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 //print_r ($pos);
 //$pos = "";
   $position=implode(',', $_POST['positions']);
-   register($_POST['firstName'],$_POST['lastName'],$_POST['scuid'],$_POST['email'],$_POST['phone'],$_POST['reason'],$_POST['uquality'],$position);
+   register($_POST['firstName'],$_POST['lastName'],$_POST['scuid'],$_POST['email'],$_POST['phone'],$_POST['reason'],$_POST['uquality'],$_POST['positionSelect']);
 //foreach($_POST['positions'] as $position){
   //echo $position;
 }

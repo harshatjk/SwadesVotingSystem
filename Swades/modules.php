@@ -8,7 +8,7 @@ function register($firstname,$lastname,$scuid,$email,$phone,$reason,$uniqueness,
   VALUES ('$firstname', '$lastname', '$scuid' , '$email', '$phone', '$reason','$uniqueness', '$positions' )";
 
   if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    //echo "New record created successfully";
     //session_impl($email,$password);
   } else {
     //  echo "Error: " . $sql . "<br>" . mysqli_error($conn);

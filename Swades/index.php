@@ -52,9 +52,9 @@
       <div class="col-sm-2">
         <div class="followUs">
           <p>Follow us on:</p>
-          <a target="_blank" title="follow me on Twitter" href="https://twitter.com/Era81Official"><img alt="follow me on Twitter" src="images/twiiter30x30.png" border=0></a>
+        <!--  <a target="_blank" title="follow me on Twitter" href="https://twitter.com/Era81Official"><img alt="follow me on Twitter" src="images/twiiter30x30.png" border=0></a> -->
           <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/groups/SwadesAtSCU/"><img alt="follow me on facebook" src="images/facebook30x30.png" border=0></a>
-          <a target="_blank" title="follow me on instagram" href="https://instagram.com/era81official/"><img alt="follow me on instagram" src="images/instagram30x30.png" border=0></a>
+      <!--     <a target="_blank" title="follow me on instagram" href="https://instagram.com/era81official/"><img alt="follow me on instagram" src="images/instagram30x30.png" border=0></a> -->
         </div>
       </div>
     </div>
