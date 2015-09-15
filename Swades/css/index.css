@@ -6,12 +6,12 @@
   font-style: normal;
   src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot');
   src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot?#iefix') format('embedded-opentype'),
-       local('Alegreya Sans Medium'),
-       local('Alegreya-Sans-500'),
-       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9afDHhyC1TRD9sSvvqBBgc4w.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aYbHQgMiPeC0S_y2k9np4ck.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=11EDm-lum6tskJMBbdy9aYAtZcN_2HNZOarCoCsaTns&skey=2fba1343c636ee49#AlegreyaSans') format('svg');
+  local('Alegreya Sans Medium'),
+  local('Alegreya-Sans-500'),
+  url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9afDHhyC1TRD9sSvvqBBgc4w.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aYbHQgMiPeC0S_y2k9np4ck.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=11EDm-lum6tskJMBbdy9aYAtZcN_2HNZOarCoCsaTns&skey=2fba1343c636ee49#AlegreyaSans') format('svg');
 }
 
 @font-face {
@@ -34,12 +34,12 @@
   font-style: normal;
   src: url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMhl1E_8U4SpYtCavOB-IMDg.eot');
   src: url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMhl1E_8U4SpYtCavOB-IMDg.eot?#iefix') format('embedded-opentype'),
-       local('Permanent Marker'),
-       local('Permanent-Marker-regular'),
-       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMio-5Z6V1O0VBgfXWFfbB4c.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMrg27BfaRSB61e9iDGqjWqk.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=9vYsg5VgPHKK8SXYbf3sMnun_M_OMvfRqqwdtVuHdps&skey=84f486597b8007d1#PermanentMarker') format('svg');
+  local('Permanent Marker'),
+  local('Permanent-Marker-regular'),
+  url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMio-5Z6V1O0VBgfXWFfbB4c.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMrg27BfaRSB61e9iDGqjWqk.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=9vYsg5VgPHKK8SXYbf3sMnun_M_OMvfRqqwdtVuHdps&skey=84f486597b8007d1#PermanentMarker') format('svg');
 }
 
 @font-face {
@@ -206,7 +206,7 @@
 }
 
 #linkedin{
-  margin-left: 115px;
+  margin-left: 155px;
 }
 
 #harsha,#Nilay,#Rahul,#Ashish,#Raj,#Chinmay,#Shantanu,#Ketki,#Bhaumik,#Aashna,#Suteekshan,#Ajay,#Trupti{
@@ -214,8 +214,25 @@
 }
 .buttonHolder{ text-align: center; }
 
-#profileHeading{
-  font-family: 'Open Sans';
-  text-align:center;
-  font-size: 150%;
-}
+.imageGaneshJi{
+  margin-top: 60px;
+  text-align: center; }
+
+  #profileHeading{
+    font-family: 'Sniglet';
+    text-align:center;
+    font-size: 150%;
+  }
+
+  #wishes{
+    font-family: 'Open Sans';
+    text-align:center;
+    font-size: 150%;
+  }
+
+  #notAgain,#contactUs,#votingThanks{
+    margin-top: 50px;
+    font-family: 'Open Sans';
+    text-align:center;
+    font-size: 150%;
+  }

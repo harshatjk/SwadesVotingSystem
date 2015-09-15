@@ -117,13 +117,14 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 align="center">Important Information</h4>
+                                <h4 align="center">Login</h4>
                               </div>
                               <div class="modal-body">
 
 
                               </div>
                               <div class="modal-footer">
+                                <p align="center"><b>Note: None of your personal data is Stored or Saved.</b></p>
                                 <p align="center" style="color:red">For any queries, Please contact us at scu.swades@gmail.com</p>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                               </div>

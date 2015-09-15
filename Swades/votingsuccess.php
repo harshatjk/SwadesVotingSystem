@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>Voting Completed</title>
+  <title>Voting Successful</title>
   <link rel="stylesheet"
   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script
@@ -28,7 +28,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
   <div class="container" style="background-image: url('images/SwadesOpacity.jpg'); background-size: 100% 700px; height:600px;">
-    <p>Thank you for voting !!</p>
-    <p>Please contact us at scu.edu</p>
+    <p id="votingThanks">Thank you for voting. Follow us on Facebook for more updates.</p>
+    <p id="wishes">Once again we wish you ... </p>
+    <div class="imageGaneshJi">
+      <img src="images/GaneshJi.jpg" class="img-thumbnail" height="982" width="632">
+    </div>
   </body>
   </html>
