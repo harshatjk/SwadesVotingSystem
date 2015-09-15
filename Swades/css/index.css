@@ -1,17 +1,45 @@
 @CHARSET "ISO-8859-1";
 
 @font-face {
+  font-family: 'Alegreya Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot');
+  src: url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aavtqssTGFxKBYDOY35-ctA.eot?#iefix') format('embedded-opentype'),
+       local('Alegreya Sans Medium'),
+       local('Alegreya-Sans-500'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9afDHhyC1TRD9sSvvqBBgc4w.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aRSu2h6M8zeGTOAvuRkzdcM.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aYbHQgMiPeC0S_y2k9np4ck.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=11EDm-lum6tskJMBbdy9aYAtZcN_2HNZOarCoCsaTns&skey=2fba1343c636ee49#AlegreyaSans') format('svg');
+}
+
+@font-face {
   font-family: 'Ubuntu';
   font-weight: 700;
   font-style: bold;
   src: url('http://fonts.gstatic.com/s/ubuntu/v7/_tMhxyW6i8lbI7YsUdFlGA.eot');
   src: url('http://fonts.gstatic.com/s/ubuntu/v7/_tMhxyW6i8lbI7YsUdFlGA.eot?#iefix') format('embedded-opentype'),
-       local('Ubuntu'),
-       local('Ubuntu-regular'),
-       url('http://fonts.gstatic.com/s/ubuntu/v7/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/ubuntu/v7/2Q-AW1e_taO6pHwMXcXW5w.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=MOWTjcs_zhdIcGnXsgVhnA#Ubuntu') format('svg');
+  local('Ubuntu'),
+  local('Ubuntu-regular'),
+  url('http://fonts.gstatic.com/s/ubuntu/v7/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/ubuntu/v7/2Q-AW1e_taO6pHwMXcXW5w.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=MOWTjcs_zhdIcGnXsgVhnA#Ubuntu') format('svg');
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMhl1E_8U4SpYtCavOB-IMDg.eot');
+  src: url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMhl1E_8U4SpYtCavOB-IMDg.eot?#iefix') format('embedded-opentype'),
+       local('Permanent Marker'),
+       local('Permanent-Marker-regular'),
+       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMio-5Z6V1O0VBgfXWFfbB4c.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMrg27BfaRSB61e9iDGqjWqk.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=9vYsg5VgPHKK8SXYbf3sMnun_M_OMvfRqqwdtVuHdps&skey=84f486597b8007d1#PermanentMarker') format('svg');
 }
 
 @font-face {
@@ -20,12 +48,26 @@
   font-style: normal;
   src: url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z_Y6323mHUZFJMgTvxaG2iE.eot');
   src: url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z_Y6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
-       local('Russo One'),
-       local('Russo-One-regular'),
-       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z5Bw1xU1rKptJj_0jans920.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z7O3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z6CWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=RO6e96EC9m6OLO0tr7J3z5bd9NUM7myrQQz30yPaGQ4#RussoOne') format('svg');
+  local('Russo One'),
+  local('Russo-One-regular'),
+  url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z5Bw1xU1rKptJj_0jans920.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z7O3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/russoone/v4/RO6e96EC9m6OLO0tr7J3z6CWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=RO6e96EC9m6OLO0tr7J3z5bd9NUM7myrQQz30yPaGQ4#RussoOne') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot');
+  src: url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+  local('Open Sans Bold'),
+  local('Open-Sans-700'),
+  url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=k3k702ZOKiLJc3WVjuplzFlIn5tFQcqMuf-jhyJP0ps#OpenSans') format('svg');
 }
 
 @font-face {
@@ -34,12 +76,12 @@
   font-style: normal;
   src: url('http://fonts.gstatic.com/s/sniglet/v7/N15kDjflQOyBCJl1poTHsQ.eot');
   src: url('http://fonts.gstatic.com/s/sniglet/v7/N15kDjflQOyBCJl1poTHsQ.eot?#iefix') format('embedded-opentype'),
-       local('Sniglet Regular'),
-       local('Sniglet-regular'),
-       url('http://fonts.gstatic.com/s/sniglet/v7/MPlYT5AgACGCWwu4VFE-0gLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
-       url('http://fonts.gstatic.com/s/sniglet/v7/YKExnnK0h4dXQs9TX8CgrgLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
-       url('http://fonts.gstatic.com/s/sniglet/v7/fgj9ij3bqnclL-IZjpMXxw.ttf') format('truetype'),
-       url('http://fonts.gstatic.com/l/font?kit=RKBq93DZxZjARS9SfTbhAA&skey=430260da1e5b7678#Sniglet') format('svg');
+  local('Sniglet Regular'),
+  local('Sniglet-regular'),
+  url('http://fonts.gstatic.com/s/sniglet/v7/MPlYT5AgACGCWwu4VFE-0gLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/sniglet/v7/YKExnnK0h4dXQs9TX8CgrgLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/sniglet/v7/fgj9ij3bqnclL-IZjpMXxw.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=RKBq93DZxZjARS9SfTbhAA&skey=430260da1e5b7678#Sniglet') format('svg');
 }
 
 
@@ -119,7 +161,7 @@
 }
 
 #registrationTimer{
-font-family: 'Ubuntu';
+  font-family: 'Ubuntu';
   font-size: 25px;
   text-align:justify;
   text-align:center;
@@ -141,4 +183,39 @@ font-family: 'Ubuntu';
 
 .followUs{
   text-align:center;
+}
+
+#rules{
+  text-align: justify;
+}
+
+#joiningTerm{
+  font-family: 'Open Sans';
+  text-align:center;
+}
+
+#potentialCandidates{
+  font-family: 'Open Sans';
+  text-align:center;
+}
+
+#moreDetails{
+  font-family: 'Open Sans';
+  text-align:center;
+  margin-top: 160px;
+}
+
+#linkedin{
+  margin-left: 115px;
+}
+
+#harsha,#Nilay,#Rahul,#Ashish,#Raj,#Chinmay,#Shantanu,#Ketki,#Bhaumik,#Aashna,#Suteekshan,#Ajay,#Trupti{
+  font-family: 'Permanent Marker';
+}
+.buttonHolder{ text-align: center; }
+
+#profileHeading{
+  font-family: 'Open Sans';
+  text-align:center;
+  font-size: 150%;
 }

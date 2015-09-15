@@ -15,4 +15,18 @@ function register($firstname,$lastname,$scuid,$email,$phone,$reason,$uniqueness,
   }
 }
 
+
+function voting($quarter,$year,$choiceone,$choicetwo,$choicethree){
+  $conn = dbConnection();
+  $sql = "INSERT INTO voting (quarter, year, choiceone, choicetwo, choicethree )
+  VALUES ('$quarter', '$year', '$choiceone' , '$choicetwo', '$choicethree' )";
+
+  if ($conn->query($sql) === TRUE) {
+    //echo "New record created successfully";
+    //session_impl($email,$password);
+  } else {
+    //  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+}
+
 ?>
