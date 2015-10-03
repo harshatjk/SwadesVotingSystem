@@ -2,9 +2,10 @@ function validate(){
   var year = document.getElementById("yearSelect").value;
   var quarter = document.getElementById("quarterSelect").value;
   var email = document.getElementById("vemail").value;
-  alert(email);
+  //alert(email);
   //alert(quarter);
 
+if(confirmAlert()){
   if(validateQuarter(quarter)){
     if(validateYear(year)){
       if(validateEmail(email)){
@@ -12,8 +13,20 @@ function validate(){
       }
     }
   }
-
+}
   return false;
+}
+
+
+function confirmAlert() {
+    var txt;
+    var r = confirm("You won't be able to revert your selection's. Are you sure you want to go ahead ?");
+    if (r == true) {
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
 

@@ -15,7 +15,7 @@
 <body>
   <div class="container" style="background-image: url('images/SwadesOpacity.jpg'); background-size: 100% 700px; height:600px;">
     <div class="row">
-      <p id="registrationTimer">Applicant registration Ends in:</p>
+	<font color=red size=+5><b><p id="registrationTimer">Voting for Swades 2015-16 Board has ended!</p></b></font>
       <div id="countdown" ></div><!-- /#Countdown Div -->
     </div>
     <br>
@@ -34,9 +34,9 @@
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
         <div class="navigation-button" id="navigation-button" >
-          <a href="registration.php" class="btn btn-info btn-md" role="button" data-toggle="tooltip" title="All the people interested in being part of Swades board should click here.">Register to Contest</a>
+          <a href="registration.php" class="btn btn-info btn-md" role="button" data-toggle="tooltip" disabled title="Registration period has ended">Register to Contest</a>
           <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" title="Click here to know about the election process in detail.">Rules and Instructions</button>
-          <button type="button" class="btn btn-info btn-md"  data-toggle="modal" data-target="#loginModal" data-toggle="tooltip" title="Login with your Facebook to vote.">Login to Vote</a>
+          <button type="button" class="btn btn-info btn-md"  data-toggle="modal" data-target="#loginModal" disabled data-toggle="tooltip" title="Voting period has ended">Login to Vote</a>
           </div>
         </div>
         <div class="col-sm-3"></div>
@@ -109,6 +109,7 @@
                           </div>
                         </div>
 
+                            
                         <!-- Modal -->
                         <div id="loginModal" class="modal fade" role="dialog">
                           <div class="modal-dialog">
@@ -119,9 +120,15 @@
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 align="center">Login</h4>
                               </div>
-                              <div class="modal-body">
-
-
+                         <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-sm-4"> 
+                                  </div>
+                                  <div class="col-sm-3">
+<div class="flogin">
+                                <?php include 'voting/index.php' ?></div></div>
+                                  <div class="col-sm-5"></div>
+                                </div>
                               </div>
                               <div class="modal-footer">
                                 <p align="center"><b>Note: None of your personal data is Stored or Saved.</b></p>
@@ -132,7 +139,6 @@
 
                           </div>
                         </div>
-
 
                         <script src="js/timer.js"></script>
                       </body>

@@ -192,11 +192,13 @@
 #joiningTerm{
   font-family: 'Open Sans';
   text-align:center;
+font-size: 120%;
 }
 
 #potentialCandidates{
   font-family: 'Open Sans';
   text-align:center;
+font-size: 150%;
 }
 
 #moreDetails{
@@ -209,10 +211,17 @@
   margin-left: 155px;
 }
 
-#harsha,#Nilay,#Rahul,#Ashish,#Raj,#Chinmay,#Shantanu,#Ketki,#Bhaumik,#Aashna,#Suteekshan,#Ajay,#Trupti{
+#harsha,#Nilay,#Rahul,#Ashish,#Raj,#Chinmay,#Shantanu,#Ketki,#Bhaumik,#Aashna,#Suteekshan,#Ajay,#Trupti,#Smriti{
   font-family: 'Permanent Marker';
 }
 .buttonHolder{ text-align: center; }
+.flogin{ margin-left: 20px;
+margin-bottom: 10px;}
+#logoutbtn{
+float:right;
+margin-right:1vw;
+margin-top: 1vh;
+}
 
 .imageGaneshJi{
   margin-top: 60px;
@@ -221,7 +230,7 @@
   #profileHeading{
     font-family: 'Sniglet';
     text-align:center;
-    font-size: 150%;
+    font-size: 250%;
   }
 
   #wishes{

@@ -53,7 +53,8 @@ function validatelName(lname) {
 }
 
 function validateEmail(email){
-  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,7})+$/;
+  var filter = /[a-zA-Z0-9]+@scu\.edu/;
+  // var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,7})+$/;
   if( email == ""){
     document.getElementById("formError").innerHTML=" Email field can't be empty. ";
     return false;
@@ -68,7 +69,7 @@ function validateEmail(email){
 }
 
 function validatescuEmail(email){
-  var filter =  /^([\w-\.]+@(?scu.edu)([\w-]+\.)+[\w-]{2,4})?$/;
+  var filter =  /[a-zA-Z0-9]+@scu\.edu/;
   if( email == ""){
     document.getElementById("formError").innerHTML=" Email field can't be empty. ";
     return false;

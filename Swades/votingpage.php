@@ -1,3 +1,15 @@
+<?php
+include 'modules.php';
+session_start();
+header("Location: index.php");
+
+if(checkuser($_SESSION['FBID'])){
+    header("Location: errorpage.php");
+}
+else if(!isset($_SESSION['FBID'])){
+  header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +38,7 @@
 <body>
   <div class="container" style="background-image: url('images/SwadesOpacity.jpg'); background-size: 100% 700px; height:600px;">
 
-    <p id="profileHeading"> Know and Select your candidates </p>
+    <p id="profileHeading"> Click on the name to know your candidates </p>
 
     <div class="bs-example">
       <div class="panel-group" id="accordion">
@@ -338,13 +350,42 @@
           </div>
         </div>
 
+
         <div class="panel panel-default" data-toggle="tooltip" title="Click on the name to expand">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" id="Trupti">Trupti Raut</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" id="Smriti">Smriti Jaggi</a>
             </h4>
           </div>
           <div id="collapseTwelve" class="panel-collapse collapse">
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+
+                  <img src="images/Smriti.jpg" class="img-thumbnail" height="382" width="232">
+
+                </div>
+                <div class="col-sm-4">
+
+                  <p id="moreDetails">You can know more about them below:</p>
+                  <a target="_blank" title="follow me on LinkedIN" href="https://www.linkedin.com/in/smritijaggi
+                  " id="linkedin"><img alt="follow me on Twitter" src="images/linkedin-30x30.png" border=0></a>
+                  <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/Smriti.Jaggi"><img alt="follow me on facebook" src="images/facebook30x30.png" border=0></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default" data-toggle="tooltip" title="Click on the name to expand">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" id="Trupti">Trupti Raut</a>
+            </h4>
+          </div>
+          <div id="collapseThirteen" class="panel-collapse collapse">
             <div class="panel-body">
 
               <div class="row">
@@ -364,6 +405,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
@@ -391,6 +434,7 @@
             <div class="form-group">
               <select class="form-control" id="yearSelect" name="yearSelect" required>
                 <option value="" disabled selected>Year</option>
+                <option value="2015">2015</option>
                 <option value="2014">2014</option>
                 <option value="2013">2013</option>
                 <option value="2012">2012</option>
@@ -410,7 +454,7 @@
       </div>
 
       <div class="row">
-        <p id="potentialCandidates">You can vote for upto "4" potential candidates:</p>
+        <p id="potentialCandidates">You can vote for a maximum of 4 candidates:</p>
         <div class="col-sm-5"></div>
         <div class="col-sm-3">
           <div class="applyPosition">
@@ -474,35 +518,44 @@
               </div>
               <div class="checkbox">
                 <label>
+                  <input type="checkbox" name="positions[]" value="Smriti Jaggi">Smriti Jaggi
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
                   <input type="checkbox" name="positions[]" value="Trupti Raut"> Trupti Raut
                 </label>
               </div>
+
+
+
+
             </div>
           </div>
           <div class="col-sm-4"></div>
         </div>
       </div>
-        <br>
-        <div class="row">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-7">
-            <div class="form-group">
-              <label for="email" class="control-label col-xs-4">* Please enter your E-mail ID</label>
-              <div class="col-xs-6">
-                <input type="email" class="form-control" id="vemail" name="vemail"
-                placeholder="Email ID" required>
-                <p id="formError">
-                </p>
-              </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-7">
+          <div class="form-group">
+            <label for="email" class="control-label col-xs-4">* Please enter your E-mail ID</label>
+            <div class="col-xs-6">
+              <input type="email" class="form-control" id="vemail" name="vemail"
+              placeholder="Email ID" required>
+              <p id="formError">
+              </p>
             </div>
           </div>
-          <div class="col-sm-2"></div>
         </div>
+        <div class="col-sm-2"></div>
+      </div>
 
-        <div class="buttonHolder">
-          <button type="submit" class="btn btn-default btn-md" name="saveVoteDetails" id="voteButton">Vote</button>
-        </div>
-      </form>
-      <script src="js/votingvalidator.js"></script>
-    </body>
-    </html>
+      <div class="buttonHolder">
+        <button type="submit" class="btn btn-default btn-md" name="saveVoteDetails" id="voteButton">Vote</button>
+      </div>
+<br><br>
+    </form>
+    <script src="js/votingvalidator.js"></script>
+  </body>  </html>
